@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajesh's_Portfolio</title>
+    <link rel="stylesheet" href="Rajesh_portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="name">Rajesh_Verma's Portfolio</div>
+            <div id="details">
+                <ul id="sidemenu">
+                    <li>Home</li>
+                    <li>About Me</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li>Contact Me</li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="sec">
+            <div class="left_section">Hi, My Name is 
+                <div class="name1"><b>Rajesh Verma</b></div>
+                <br>
+                <span id="element"></span>
+            </div>
+            <div class="right_section">
+                <img src="pp.jpg" class="pp">
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<b>Student At NIT-T</b>','<b>Competitive Programmer</b>','<b>Core : DBMS,OS,SQL</b>','<b>Frontend Developer</b>','<b>Ongoing Full Stack Developer...</b>'],
+            typeSpeed:50,
+        });
+        </script>
+        <div class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col_1">
+                        <img class="col_11" src="pff2.jpg"> 
+                    </div>
+                    <div class="col_2">
+                        <h1 class="sub_titel">About Me</h1>
+                        <p class="para">Pursuing <b>MCA</b> at NIT Trichy, Designing Intuitive user Interfaces as a <b>Frontend Developer</b> while advancing my expertise as a <b>Full-Stack Developer</b>.Apply knowledge of core subjects like <b>DBMS, OS, and Networking</b> to build efficient and Scalable web Solutions.</p>
+                        <div class="about_title">
+                            <p class="title_para active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="title_para" onclick="opentab('Experience')">Experience</p>
+                            <p class="title_para" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab_contents active-tab" id="skills">
+                            <ul>
+                                <li>Language: C++</li><br>
+                                <li>DSA</li><br>
+                                <li>SQL,DBMS,OS</li><br>
+                                <li>HTML,CSS,JS,NodeJs</li><br>
+                                <li>Ongoing Full Stack...</li><br>
+                            </ul>
+                        </div>
+                        <div class="tab_contents active-tab" id="Experience" >
+                            <ul>
+                                <li>Designing CEDI NITT Website</li><br>
+                            </ul>
+                        </div>
+                        <div class="tab_contents active-tab" id="Education">
+                            <ul>
+                                <li>2023-26(current) : MCA from NIT Trichy</li><br>
+                                <li>2020-23: BSC(Maths) from DAVV Indore with 61.39%</li><br>
+                                <li>2020 : Heigher Secondary Education with 82.8%</li><br>
+                                <li>2018 : High School Education with 90%</li><br>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ..........................Services.................................................. -->
+
+        <div class="services">
+            <h1 class="service">My Services</h1>
+            <div class="div3">
+                <div class="left_service">
+                    <i class="fa-solid fa-code"></i>
+                    <div class="left_service2">
+                        <h3>Web Designer</h3>
+                        <li class="service-list">Desiging web as a Frontend Developer.</li>
+                        <li class="service-list">Working on Full Stack Development</li>
+                    </div>
+                </div>
+                <div class="mid_service">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="left_service2">
+                        <h3>Competitive Programmer </h3>
+                        <li class="service-list">Programming Languages: C++</li>
+                        <li class="service-list">Problems Solver at Leetcode(500+Qns),GFG,Codechef & Codeforces.</li>
+                        <li class="service-list">Learning new algorithms and improving time complexity mastery.</li>
+                    </div>
+                </div>
+                <div class="right_service">
+                    <i class="fas fa-laptop"></i>
+                    <div class="left_service2">
+                        <h3>Core knowledge</h3>
+                        <li class="service-list">Design and normalize databases with optimized indexing.</li>
+                        <li class="service-list">Write and debug SQL queries to manage transactions efficiently.</li>
+                        <li class="service-list">Schedule processes and manage memory in operating systems.</li>
+                        <li class="service-list">Implement concurrency and develop file systems in OS projects.</li>
+                        <li class="service-list">Develop and debug socket programs for reliable communication.</li>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <!-- ......................Projects....................  -->
+         <div class="container">
+            <h2 class="service">My Projects</h2>
+            <div class="projects">
+                <div class="clock">
+                    <i class="fa-regular fa-clock"></i>
+                    <li class="left_service2">Developed a 1-minute clock timer using precise time management techniques to ensure accuracy and functionality.</li>
+                </div>
+                <img src="timer.png" class="timer">
+                <div class="clock">      
+                    <i class="fa-solid fa-gamepad"></i>  
+                    <li class="left_service2">Built an interactive Rock-Paper-Scissors game with dynamic user input and real-time result display, implementing logical decision-making algorithms.</li>
+                    <img src="rps.png" class="rps">
+                </div>
+            </div>
+        </div>
+            <!-- .............................contact............................... -->
+        <div class="contact">
+            <h2 class="service">Contact Me<h2>
+               <div class="left-contact">
+                   <p><i class="fa-solid fa-phone"></i> Phone Number : +91 9098380072</p><br>
+                   <p> <i class="fa-solid fa-envelope"></i> Email : rv8710648@gmail.com</p><br>
+                   <p><i class="fa-brands fa-whatsapp"></i> Whatsapp : +91 9098380072</p><br>
+                   <div class="icons">
+                       <a href="https://www.facebook.com/rajeshvermavm.verma" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                       <a href="https://x.com/RKVERMA55205900" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                       <a href="https://www.instagram.com/_rjesh_verma/" target="_blank"><i class="fa-brands fa-square-instagram"> </i></a>
+                       <a href="https://www.linkedin.com/in/rajesh-verma-527815286" target="_blank"><i class="fa-brands fa-linkedin"> </i></a>
+                   </div>
+               </div>
+            </div>
+            <div class="copy-right" >
+             <p>copyright &copy; made with <i class="fa-solid fa-heart"></i> by Rajesh Verma</p>
+            </div>
+        <script src="Rajesh_portfolio.js"></script>
+    </body>
+    </html>
