@@ -1,1 +1,2 @@
-Hii,This is the Simple Portfolio made by me usig Html,Css & JavaScript.
+Hii,This is the Simple Portfolio made by usig Html,Css & JavaScript.
+
